@@ -1,5 +1,4 @@
 language: android
-dist: precise
 
 jdk:
   - oraclejdk8
@@ -7,11 +6,6 @@ jdk:
 android:
   components:
     -tools
-    -tools
-    -platform-tools
-    -build-tools-26.0.2
-    -android-26
-    -extra
 
 script:
   - ./gradlew build connectedCheck
