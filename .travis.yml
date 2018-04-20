@@ -2,7 +2,7 @@ language: android
 dist: precise
 
 jdk:
-  - oraclejdk7
+  - oraclejdk8
 
 android:
   components:
@@ -12,8 +12,6 @@ android:
     -build-tools-26.0.2
     -android-26
     -extra
-    -sys-img-armeabi-v7a-android-26
-
 
 script:
   - ./gradlew build connectedCheck
